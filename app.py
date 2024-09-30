@@ -22,11 +22,9 @@ def predict():
     features = pd.DataFrame(data['features']).T  # transpose to make it a single sample DataFrame
     features.columns = [
         'LIMIT_BAL', 'AGE', 'PAY_1', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6',
-        'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
+        'BILL_AMT1', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
         'SEX_Female', 'SEX_Male', 'EDU_Graduate_School', 'EDU_High_School',
-        'EDU_Others', 'EDU_University', 'MARRIAGE_Married', 'MARRIAGE_Others',
-        'MARRIAGE_Single'
+        'EDU_University', 'MARRIAGE_Married', 'MARRIAGE_Others', 'MARRIAGE_Single'
     ]
 
     # predict
