@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # load the model
-model = joblib.load('model.pkl')  # Ensure this path is correct
+model = joblib.load('model.pkl')
 
 # initialize the flask app
 app = Flask(__name__)
